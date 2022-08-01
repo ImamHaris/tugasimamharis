@@ -1,7 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:git_project/constants/r.dart';
+import 'package:tugasimamharis/constants/r.dart';
+import 'package:tugasimamharis/view/login_page.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -10,6 +11,11 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+
+    Timer(const Duration(seconds: 5), () {
+      Navigator.of(context).pushReplacementNamed(LoginPage.route);
+    });
+
     return Scaffold(
         backgroundColor: R.colors.primary,
         body: Center(
