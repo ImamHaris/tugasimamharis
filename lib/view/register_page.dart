@@ -1,5 +1,8 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:tugasimamharis/constants/r.dart';
+import 'package:tugasimamharis/helpers/user_email.dart';
 import 'package:tugasimamharis/view/login_page.dart';
 import 'package:tugasimamharis/view/main_page.dart';
 
@@ -18,6 +21,10 @@ class _RegisterPageState extends State<RegisterPage> {
   List<String> classSlta = ["10", "11", "12"];
   String selectedClass = "10";
 
+  final emailController = TextEditingController();
+  final schoolNameController = TextEditingController();
+  final fullNameController = TextEditingController();
+
   onTapGender(Gender genderInput) {
     if (genderInput == Gender.lakiLaki) {
       gender = "Laki-Laki";
@@ -25,6 +32,18 @@ class _RegisterPageState extends State<RegisterPage> {
       gender = "Perempuan";
     }
     setState(() {});
+  }
+
+  initDataUser() {
+    emailController.text = UserEmail.getUserEmail()!;
+    fullNameController.text = UserEmail.getUserDisplayName()!;
+    setState(() {});
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    initDataUser();
   }
 
   @override
