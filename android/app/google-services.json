@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1088018762563",
+    "project_id": "flutter-firebase-auth-6a0a1",
+    "storage_bucket": "flutter-firebase-auth-6a0a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088018762563:android:fd18140b2ba19c750d7df6",
+        "android_client_info": {
+          "package_name": "com.example.tugasimamharis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088018762563-bbfhe5tj8lo5jtj8kjmulqekqoff921s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPxmcjtAwYs9lCYPXwlMqY6PiRp7KUYS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088018762563-bbfhe5tj8lo5jtj8kjmulqekqoff921s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
